@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+
+}
+
+header {
+    height: auto;
+    background-color: rgb(0, 113, 248);
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+nav {
+    display: flex;
+    gap: 39%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+ul li {
+    float: left;
+    padding: 10px 18px;
+}
+
+h6 {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    margin: 20px 0;
+    font-family: "Poppins", sans-serif;
+}
+
+h2 {
+    font-size: 48px;
+    color: #fff;
+    margin-top: 20px;
+    position: relative;
+    padding-bottom: 5px;
+    margin-bottom: 40px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+
+p {
+    color: #fff;
+    margin-bottom: 70px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+}
+
+ul li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+form {
+    position: relative;
+    max-width: 450px;
+}
+
+form input {
+    max-width: 450px;
+    width: 88%;
+    height: 50px;
+    outline: none;
+    border-radius: 25px;
+    background-color: #fff;
+    border: none;
+    padding: 0px 25px;
+    font-size: 14px;
+    color: #7a7a7a;
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+}
+
+form button {
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    background-color: #ee626b;
+    color: #fff;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 0px 25px;
+    border: none;
+    border-radius: 25px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: all .3s;
+}
+
+
+.li-final {
+    background-color: rgb(238, 98, 107);
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.row {
+    width: 80%;
+    padding: 20px;
+}
+
+.body-content {
+    width: 100%;
+    height: 846px;
+    display: flex;
+    background-color: rgb(0, 113, 248);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0px 0px 150px 150px;
+    background-image: url("https://templatemo.com/templates/templatemo_589_lugx_gaming/assets/images/banner-bg.jpg");
+}
+
+.page-info {
+    width: 35%;
+    padding: 200px;
+}
+
+.game-image {
+    width: 420px;
+    height: 550px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 90px;
+    margin-left: 71px;
+}
+
+.game-image img {
+    border-radius: 20px;
+
+}
+
+.price {
+    position: absolute;
+    right: 20%;
+    top: 23%;
+    border-radius: 25px;
+    background-color: #008af8;
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fff;
+    padding: 4px 18px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+}
+
+.offer {
+    position: absolute;
+    top: 65%;
+    right: 37%;
+    border-radius: 50%;
+    background-color: #ee626b;
+    font-size: 28px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fff;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+}
+
+.features {
+    margin-top: -80px;
+    width: 100%;
+    height: auto;
+
+}
+
+.features-content {
+    display: flex;
+    width: 100%;
+    gap: 35px;
+    justify-content: center;
+}
+
+.features-card {
+    width: 20%;
+    height: 100px;
+}
+
+.features-card-items {
+    padding: 35px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 25px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.features-image-content {
+    width: 90px;
+    height: 90px;
+    display: inline-block;
+    text-align: center;
+    line-height: 90px;
+    background-color: #0071f8;
+    border-radius: 50%;
+    transition: all .3s;
+}
+
+.features-image-content:hover {
+    background-color: rgb(238, 98, 107);
+    transition: all .3s;
+
+}
+
+.features-image-content img {
+    width: 45%;
+    margin-top: 24px;
+}
+
+.features-card-items h4 {
+    font-size: 17px;
+    margin-top: 25px;
+    text-transform: uppercase;
+}
+
+.features-card a {
+    text-decoration: none;
+    color: black;
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+}
