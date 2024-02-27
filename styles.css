@@ -252,3 +252,363 @@ form button {
     font-family: "Poppins", sans-serif;
     font-weight: 100;
 }
+
+.tit {
+    background-color: white;
+
+    width: 100%;
+    padding: 0 120px;
+
+
+}
+
+.treding {
+    margin-top: 200px;
+    display: flex;
+    width: 100%;
+
+}
+
+.titulo {
+    width: 45%;
+
+}
+
+.titulo h6 {
+    color: #ee626b;
+}
+
+.titulo h2 {
+    color: black;
+}
+
+.subtitulo {
+    width: 100%;
+    display: flex;
+
+}
+
+.boton {
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    margin-top: 4%;
+
+}
+
+.boton a {
+    background-color: #ee626b;
+    padding: 20px;
+    height: 18px;
+    border-radius: 25px;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+
+
+.features-cards img {
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
+
+}
+
+.features-card-games {
+
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 25px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.features-cards a {
+    text-decoration: none;
+}
+
+
+.features-game-name span {
+    font-size: 16px;
+    color: #7a7a7a;
+    margin-bottom: 5px;
+    display: inline-block;
+    font-family: "Poppins", sans-serif;
+
+    text-decoration: none;
+
+}
+
+.features-game-name h4 {
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 5px;
+    display: inline-block;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+
+.features-game-name {
+    padding: 25px;
+    text-align: justify;
+    display: grid;
+}
+
+.hgs {
+    background-color: #f7f7f7;
+    ;
+    border-radius: 150px;
+    width: 100%;
+    padding: 0 120px;
+
+
+}
+
+.top {
+
+    margin-top: 200px;
+    display: flex;
+    width: 100%;
+
+}
+
+.tit-top {
+    width: 45%;
+
+}
+
+.tit-top h6 {
+    color: black;
+}
+
+.tit-top h2 {
+    color: #ee626b;
+}
+
+.sub-top {
+    width: 100%;
+    display: flex;
+}
+
+.features-card-sale {
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 25px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.exp-btn {
+    background-color: #ee626b;
+    padding: 20px;
+    height: 18px;
+    border-radius: 25px;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    margin-left: 70px;
+
+}
+
+.categories {
+    background-color: white;
+    margin-top: 200px;
+    display: flex;
+    width: 100%;
+
+}
+
+.cat-men {
+    background-color: white;
+    ;
+    border-radius: 150px;
+    width: 100%;
+    padding: 0 120px;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.cat-tit {
+    width: 100%;
+}
+
+.cat-tit h6 {
+    color: #ee626b;
+}
+
+.cat-tit h2 {
+    color: black;
+}
+
+.img-cat {
+    margin-top: 21px;
+
+}
+
+.car-cat {
+    background-color: #0071f8;
+    border-radius: 25px;
+}
+
+.features-game-cat h1 {
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.fondo::after {
+    background-image: url("https://templatemo.com/templates/templatemo_589_lugx_gaming/assets/images/cta-bg.jpg");
+    display: flex;
+    width: 33%;
+    height: 600px;
+
+}
+
+.fondo img {
+    width: 493px;
+    height: 494px;
+    border-radius: 25px;
+}
+
+.cont-final {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 200px;
+}
+
+.our-shop {
+    margin-top: 64px;
+    height: auto;
+    background-color: #f7f7f7;
+    border-radius: 25px;
+    padding: 80px;
+    width: 19%;
+    position: relative;
+    right: -144px;
+}
+
+
+
+.our-shop-title-container {
+    margin: 45px 0;
+}
+
+.our-shop-title {
+    color: #ee626b;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.our-shop-title-container {
+    margin: 41px 0 29px 0px;
+}
+
+.our-shop-description {
+    font-family: "Poppins", sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-top: 20px;
+    line-height: 44px;
+    padding: 0 115px 0 0;
+    margin-bottom: 58px;
+
+}
+
+.prices {
+    color: #0071f8;
+}
+
+.lorem {
+    padding: 0 40px 0 0;
+}
+
+.lorem p {
+    line-height: 28px;
+    color: #4a4a4a;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+
+.button-shop a {
+    display: inline-block;
+    background-color: #ee626b;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    height: 50px;
+    line-height: 50px;
+    padding: 0px 30px;
+    border-radius: 25px;
+    transition: all .3s;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+
+}
+
+
+.newsletter {
+    background-color: #f7f7f7;
+    border-radius: 25px;
+    padding: 80px 60px;
+    height: auto;
+    position: relative;
+    right: 10%;
+    width: 19%;
+    margin-top: 19%;
+}
+
+.newsletter-title {
+    color: #ee626b;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+}
+
+
+
+.newsletter-description h4 {
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin: 56px 0;
+    line-height: 44px;
+    font-family: "Poppins", sans-serif;
+
+}
+
+.newsletter-description span{
+    color: #0071f8;
+    font-family: "Poppins", sans-serif;
+
+}
+
+footer{
+    height: 200px;
+    margin-top: 160px;
+    background-image: url("https://templatemo.com/templates/templatemo_589_lugx_gaming/assets/images/footer-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-right-radius: 125px;
+    border-top-left-radius: 125px;
+}
+
+.footer-container{
+    text-align: center;
+    padding: 19px;
+}
+
+.footer-container p {
+    text-align: center;
+    line-height: 90px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+}
