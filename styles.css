@@ -1,0 +1,561 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box; /* Mejora el manejo del padding y el borde */
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Header */
+header {
+    background-color: rgb(0, 113, 248);
+    padding: 20px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+ul.nav {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+}
+
+ul.nav li a {
+    color: white;
+    padding: 10px 15px;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+}
+
+ul.nav li a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.li-final {
+    background-color: rgb(238, 98, 107);
+    border-radius: 20px;
+    padding: 10px 20px; /* Ajusta el padding para que no sea demasiado grande */
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 14px; /* Tamaño de fuente adecuado para móviles */
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+    transition: background-color 0.3s;
+}
+
+.li-final:hover {
+    background-color: rgba(238, 98, 107, 0.9); /* Efecto hover */
+}
+
+.our-shop {
+    background-color: #f7f7f7;
+    border-radius: 25px;
+    padding: 40px 20px; /* Padding más equilibrado */
+    text-align: center; /* Centra el contenido */
+    max-width: 600px; /* Ancho máximo para evitar que se estire demasiado */
+    margin: 0 auto; /* Centra el contenedor */
+    font-family: "Poppins", sans-serif; /* Asegura la tipografía */
+}
+
+.our-shop-title-container {
+    margin-bottom: 20px; /* Espaciado inferior */
+}
+
+.our-shop-title {
+    color: #ee626b;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 10px; /* Espaciado inferior */
+}
+
+.our-shop-description {
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: capitalize;
+    line-height: 1.2; /* Mejora la legibilidad */
+    margin-bottom: 20px; /* Espaciado inferior */
+}
+
+.our-shop-description .prices {
+    color: #0071f8; /* Color para el texto resaltado */
+}
+
+.lorem p {
+    color: #4a4a4a;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6; /* Mejora la legibilidad */
+    margin-bottom: 30px; /* Espaciado inferior */
+}
+
+.button-shop a {
+    display: inline-block;
+    background-color: #ee626b;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 30px; /* Padding más equilibrado */
+    border-radius: 25px;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+}
+
+.button-shop a:hover {
+    background-color: #d9534f; /* Efecto hover */
+}
+
+/* Media Queries para Responsive Design */
+@media (max-width: 768px) {
+    .our-shop {
+        padding: 30px 15px; /* Reduce el padding en tablets */
+    }
+
+    .our-shop-description {
+        font-size: 28px; /* Reduce el tamaño de la fuente en tablets */
+    }
+
+    .lorem p {
+        font-size: 14px; /* Reduce el tamaño de la fuente en tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .our-shop {
+        padding: 20px 10px; /* Reduce el padding en móviles */
+    }
+
+    .our-shop-description {
+        font-size: 24px; /* Reduce el tamaño de la fuente en móviles */
+    }
+
+    .lorem p {
+        font-size: 12px; /* Reduce el tamaño de la fuente en móviles */
+    }
+
+    .button-shop a {
+        font-size: 12px; /* Reduce el tamaño de la fuente en móviles */
+        padding: 8px 20px; /* Reduce el padding en móviles */
+    }
+}
+
+.fondo {
+    position: relative;
+    width: 100%;
+    max-width: 1200px; /* Ancho máximo para evitar que se estire demasiado */
+    margin: 0 auto; /* Centra el contenedor */
+    text-align: center; /* Centra el contenido */
+    padding: 20px; /* Espaciado interno */
+}
+
+.fondo img {
+    width: 100%; /* La imagen ocupa el 100% del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 25px; /* Bordes redondeados */
+    display: block; /* Asegura que la imagen sea un bloque */
+    margin: 0 auto; /* Centra la imagen */
+}
+
+/* Media Queries para Responsive Design */
+@media (max-width: 768px) {
+    .fondo {
+        padding: 15px; /* Reduce el padding en tablets */
+    }
+
+    .fondo img {
+        border-radius: 15px; /* Reduce el radio de los bordes en tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .fondo {
+        padding: 10px; /* Reduce el padding en móviles */
+    }
+
+    .fondo img {
+        border-radius: 10px; /* Reduce el radio de los bordes en móviles */
+    }
+}
+
+.newsletter {
+    background-color: #f7f7f7;
+    border-radius: 25px;
+    padding: 40px 20px; /* Padding más equilibrado */
+    text-align: center; /* Centra el contenido */
+    max-width: 600px; /* Ancho máximo para evitar que se estire demasiado */
+    margin: 0 auto; /* Centra el contenedor */
+    font-family: "Poppins", sans-serif; /* Asegura la tipografía */
+}
+
+.newsletter-title {
+    color: #ee626b;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 10px; /* Espaciado inferior */
+}
+
+.newsletter-description {
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: capitalize;
+    line-height: 1.2; /* Mejora la legibilidad */
+    margin-bottom: 20px; /* Espaciado inferior */
+}
+
+.newsletter-description span {
+    color: #0071f8; /* Color para el texto resaltado */
+}
+
+.newsletter form {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Espacio entre el input y el botón */
+    margin-top: 20px; /* Espaciado superior */
+}
+
+.newsletter input {
+    padding: 10px 20px; /* Padding más equilibrado */
+    border-radius: 25px;
+    border: 1px solid #ccc; /* Borde sutil */
+    font-size: 14px;
+    width: 100%; /* Ocupa todo el ancho disponible */
+    max-width: 300px; /* Ancho máximo para el input */
+}
+
+.newsletter button {
+    padding: 10px 20px; /* Padding más equilibrado */
+    border-radius: 25px;
+    background-color: #ee626b;
+    color: #fff;
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.newsletter button:hover {
+    background-color: #d9534f; /* Efecto hover */
+}
+
+/* Media Queries para Responsive Design */
+@media (max-width: 768px) {
+    .newsletter {
+        padding: 30px 15px; /* Reduce el padding en tablets */
+    }
+
+    .newsletter-description {
+        font-size: 28px; /* Reduce el tamaño de la fuente en tablets */
+    }
+
+    .newsletter input {
+        font-size: 12px; /* Reduce el tamaño de la fuente en tablets */
+    }
+
+    .newsletter button {
+        font-size: 12px; /* Reduce el tamaño de la fuente en tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .newsletter {
+        padding: 20px 10px; /* Reduce el padding en móviles */
+    }
+
+    .newsletter-description {
+        font-size: 24px; /* Reduce el tamaño de la fuente en móviles */
+    }
+
+    .newsletter form {
+        flex-direction: column; /* Apila el input y el botón en móviles */
+        align-items: center;
+    }
+
+    .newsletter input {
+        max-width: 100%; /* Ocupa todo el ancho en móviles */
+    }
+
+    .newsletter button {
+        width: 100%; /* Ocupa todo el ancho en móviles */
+        max-width: 300px; /* Ancho máximo para el botón */
+    }
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 480px) {
+    .li-final {
+        padding: 8px 15px; /* Reduce el padding en móviles */
+        font-size: 12px; /* Reduce el tamaño de la fuente en móviles */
+    }
+}
+
+/* Body Content */
+.body-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: rgb(0, 113, 248);
+    background-image: url("https://templatemo.com/templates/templatemo_589_lugx_gaming/assets/images/banner-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 0 0 150px 150px;
+}
+
+.page-info {
+    text-align: center;
+    max-width: 600px;
+    margin-bottom: 40px;
+}
+
+.page-info h6 {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.page-info h2 {
+    font-size: 36px;
+    color: #fff;
+    margin: 20px 0;
+}
+
+.page-info p {
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.search-input form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.search-input input {
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: none;
+    width: 100%;
+    max-width: 300px;
+}
+
+.search-input button {
+    padding: 10px 20px;
+    border-radius: 25px;
+    background-color: #ee626b;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-input button:hover {
+    background-color: #d9534f;
+}
+
+.game-image {
+    position: relative;
+    max-width: 420px;
+    margin-top: 20px;
+}
+
+.game-image img {
+    border-radius: 20px;
+}
+
+.price, .offer {
+    position: absolute;
+    background-color: #0071f8;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.price {
+    top: 20px;
+    right: 20px;
+}
+
+.offer {
+    bottom: 20px;
+    right: 20px;
+    background-color: #ee626b;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Features Section */
+.features {
+    padding: 50px 20px;
+}
+
+.features-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.features-card {
+    flex: 1 1 calc(25% - 40px);
+    max-width: 300px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 25px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+.features-card img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+}
+
+.features-card h4 {
+    font-size: 18px;
+    color: #333;
+    margin-top: 10px;
+}
+
+/* Trending Games Section */
+.treding, .top, .categories {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.titulo h6 {
+    color: #ee626b;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.titulo h2 {
+    color: #333;
+    font-size: 36px;
+    margin: 20px 0;
+}
+
+.features-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.features-card-games, .features-card-sale {
+    flex: 1 1 calc(25% - 40px);
+    max-width: 300px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 25px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+.features-card-games img, .features-card-sale img {
+    border-radius: 20px;
+    margin-bottom: 15px;
+}
+
+.features-game-name span {
+    color: #7a7a7a;
+    font-size: 16px;
+}
+
+.features-game-name h4 {
+    color: #333;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+
+
+/* Footer */
+footer {
+    background-image: url("https://templatemo.com/templates/templatemo_589_lugx_gaming/assets/images/footer-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 50px 20px;
+    text-align: center;
+    color: #fff;
+    border-radius: 125px 125px 0 0;
+    margin-top: 50px;
+}
+
+.footer-container p {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* Media Queries para Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .body-content {
+        border-radius: 0;
+    }
+
+    .features-card, .features-card-games, .features-card-sale {
+        flex: 1 1 calc(50% - 20px);
+    }
+
+    .page-info, .game-image {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .price, .offer {
+        position: static;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .features-card, .features-card-games, .features-card-sale {
+        flex: 1 1 100%;
+    }
+
+    .page-info h2 {
+        font-size: 28px;
+    }
+
+    .titulo h2 {
+        font-size: 28px;
+    }
+}
