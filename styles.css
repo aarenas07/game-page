@@ -1,566 +1,213 @@
+/* Estilos generales */
 * {
     margin: 0;
     padding: 0;
     border: 0;
     outline: 0;
-
+    box-sizing: border-box; /* Mejora el manejo del padding y el borde */
 }
 
-header {
-    height: auto;
-    background-color: rgb(0, 113, 248);
+body {
     font-family: "Poppins", sans-serif;
-    font-weight: 100;
-    font-style: normal;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Header */
+header {
+    background-color: rgb(0, 113, 248);
+    padding: 20px 0;
 }
 
 nav {
     display: flex;
-    gap: 39%;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 0 20px;
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+ul.nav {
+    display: flex;
+    gap: 15px;
+    list-style: none;
 }
 
-ul li {
-    float: left;
-    padding: 10px 18px;
-}
-
-h6 {
-    font-size: 20px;
-    text-transform: uppercase;
-    color: #fff;
-    font-weight: 500;
-    letter-spacing: 0.5px;
-    margin: 20px 0;
-    font-family: "Poppins", sans-serif;
-}
-
-h2 {
-    font-size: 48px;
-    color: #fff;
-    margin-top: 20px;
-    position: relative;
-    padding-bottom: 5px;
-    margin-bottom: 40px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-}
-
-p {
-    color: #fff;
-    margin-bottom: 70px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 100;
-}
-
-ul li a {
-    display: inline-block;
+ul.nav li a {
     color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    transition: background-color 0.3s;
 }
 
-form {
-    position: relative;
-    max-width: 450px;
+ul.nav li a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
 }
-
-form input {
-    max-width: 450px;
-    width: 88%;
-    height: 50px;
-    outline: none;
-    border-radius: 25px;
-    background-color: #fff;
-    border: none;
-    padding: 0px 25px;
-    font-size: 14px;
-    color: #7a7a7a;
-    font-family: "Poppins", sans-serif;
-    font-weight: 100;
-}
-
-form button {
-    display: inline-block;
-    height: 50px;
-    line-height: 50px;
-    background-color: #ee626b;
-    color: #fff;
-    font-size: 15px;
-    text-transform: uppercase;
-    font-weight: 500;
-    padding: 0px 25px;
-    border: none;
-    border-radius: 25px;
-    position: absolute;
-    right: 0;
-    top: 0;
-    transition: all .3s;
-}
-
 
 .li-final {
     background-color: rgb(238, 98, 107);
     border-radius: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-    font-weight: 300;
-    text-transform: uppercase;
-}
-
-.container {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-}
-
-.row {
-    width: 80%;
-    padding: 20px;
-}
-
-.body-content {
-    width: 100%;
-    height: 846px;
-    display: flex;
-    background-color: rgb(0, 113, 248);
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 0px 0px 150px 150px;
-    background-image: url("https://templatemo.com/templates/templatemo_589_lugx_gaming/assets/images/banner-bg.jpg");
-}
-
-.page-info {
-    width: 35%;
-    padding: 200px;
-}
-
-.game-image {
-    width: 420px;
-    height: 550px;
-    background-color: transparent;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-top: 90px;
-    margin-left: 71px;
-}
-
-.game-image img {
-    border-radius: 20px;
-
-}
-
-.price {
-    position: absolute;
-    right: 20%;
-    top: 23%;
-    border-radius: 25px;
-    background-color: #008af8;
-    font-size: 22px;
-    text-transform: uppercase;
-    font-weight: 700;
-    color: #fff;
-    padding: 4px 18px;
-    font-family: "Poppins", sans-serif;
+    padding: 10px 20px; /* Ajusta el padding para que no sea demasiado grande */
     font-weight: 500;
-}
-
-.offer {
-    position: absolute;
-    top: 65%;
-    right: 37%;
-    border-radius: 50%;
-    background-color: #ee626b;
-    font-size: 28px;
     text-transform: uppercase;
-    font-weight: 700;
-    color: #fff;
-    display: inline-block;
-    width: 100px;
-    height: 100px;
-    text-align: center;
-    line-height: 100px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
+    font-size: 14px; /* Tamaño de fuente adecuado para móviles */
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+    transition: background-color 0.3s;
 }
 
-.features {
-    margin-top: -80px;
-    width: 100%;
-    height: auto;
-
-}
-
-.features-content {
-    display: flex;
-    width: 100%;
-    gap: 35px;
-    justify-content: center;
-}
-
-.features-card {
-    width: 20%;
-    height: 100px;
-}
-
-.features-card-items {
-    padding: 35px;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
-    border-radius: 25px;
-    background-color: #fff;
-    text-align: center;
-}
-
-.features-image-content {
-    width: 90px;
-    height: 90px;
-    display: inline-block;
-    text-align: center;
-    line-height: 90px;
-    background-color: #0071f8;
-    border-radius: 50%;
-    transition: all .3s;
-}
-
-.features-image-content:hover {
-    background-color: rgb(238, 98, 107);
-    transition: all .3s;
-
-}
-
-.features-image-content img {
-    width: 45%;
-    margin-top: 24px;
-}
-
-.features-card-items h4 {
-    font-size: 17px;
-    margin-top: 25px;
-    text-transform: uppercase;
-}
-
-.features-card a {
-    text-decoration: none;
-    color: black;
-    font-family: "Poppins", sans-serif;
-    font-weight: 100;
-}
-
-.tit {
-    background-color: white;
-
-    width: 100%;
-    padding: 0 120px;
-
-
-}
-
-.treding {
-    margin-top: 200px;
-    display: flex;
-    width: 100%;
-
-}
-
-.titulo {
-    width: 45%;
-
-}
-
-.titulo h6 {
-    color: #ee626b;
-}
-
-.titulo h2 {
-    color: black;
-}
-
-.subtitulo {
-    width: 100%;
-    display: flex;
-
-}
-
-.boton {
-    width: 50%;
-    display: flex;
-    justify-content: end;
-    margin-top: 4%;
-
-}
-.boton a {
-    background-color: #ee626b;
-    padding: 20px;
-    height: 18px;
-    border-radius: 25px;
-    color: white;
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-}
-
-
-.features-cards img {
-    width: 250px;
-    height: 250px;
-    border-radius: 20px;
-
-}
-
-.features-card-games {
-
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
-    border-radius: 25px;
-    background-color: #fff;
-    text-align: center;
-}
-
-.features-cards a {
-    text-decoration: none;
-}
-
-
-.features-game-name span {
-    font-size: 16px;
-    color: #7a7a7a;
-    margin-bottom: 5px;
-    display: inline-block;
-    font-family: "Poppins", sans-serif;
-
-    text-decoration: none;
-
-}
-
-.features-game-name h4 {
-    font-size: 16px;
-    text-decoration: none;
-    color: black;
-    margin-bottom: 5px;
-    display: inline-block;
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-}
-
-.features-game-name {
-    padding: 25px;
-    text-align: justify;
-    display: grid;
-}
-
-.hgs {
-    background-color: #f7f7f7;
-    ;
-    border-radius: 150px;
-    width: 100%;
-    padding: 0 120px;
-
-
-}
-
-.top {
-
-    margin-top: 200px;
-    display: flex;
-    width: 100%;
-
-}
-
-.tit-top {
-    width: 45%;
-
-}
-
-.tit-top h6 {
-    color: black;
-}
-
-.tit-top h2 {
-    color: #ee626b;
-}
-
-.sub-top {
-    width: 100%;
-    display: flex;
-}
-
-.features-card-sale {
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
-    border-radius: 25px;
-    background-color: #fff;
-    text-align: center;
-}
-
-.exp-btn {
-    background-color: #ee626b;
-    padding: 20px;
-    height: 18px;
-    border-radius: 25px;
-    color: white;
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    margin-left: 70px;
-
-}
-
-.categories {
-    background-color: white;
-    margin-top: 200px;
-    display: flex;
-    width: 100%;
-
-}
-
-.cat-men {
-    background-color: white;
-    ;
-    border-radius: 150px;
-    width: 100%;
-    padding: 0 120px;
-    justify-content: center;
-    text-align: center;
-
-}
-
-.cat-tit {
-    width: 100%;
-}
-
-.cat-tit h6 {
-    color: #ee626b;
-}
-
-.cat-tit h2 {
-    color: black;
-}
-
-.img-cat {
-    margin-top: 21px;
-
-}
-
-.car-cat {
-    background-color: #0071f8;
-    border-radius: 25px;
-}
-
-.features-game-cat h1 {
-    color: white;
-    font-family: "Poppins", sans-serif;
-    font-size: 20px;
-    font-weight: 600;
-}
-
-.fondo::after {
-    background-image: url("https://templatemo.com/templates/templatemo_589_lugx_gaming/assets/images/cta-bg.jpg");
-    display: flex;
-    width: 33%;
-    height: 600px;
-
-}
-
-.fondo img {
-    width: 493px;
-    height: 494px;
-    border-radius: 25px;
-}
-
-.cont-final {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    margin-top: 200px;
+.li-final:hover {
+    background-color: rgba(238, 98, 107, 0.9); /* Efecto hover */
 }
 
 .our-shop {
-    margin-top: 64px;
-    height: auto;
     background-color: #f7f7f7;
     border-radius: 25px;
-    padding: 80px;
-    width: 19%;
-    position: relative;
-    right: -144px;
+    padding: 40px 20px; /* Padding más equilibrado */
+    text-align: center; /* Centra el contenido */
+    max-width: 600px; /* Ancho máximo para evitar que se estire demasiado */
+    margin: 0 auto; /* Centra el contenedor */
+    font-family: "Poppins", sans-serif; /* Asegura la tipografía */
 }
 
-
-
 .our-shop-title-container {
-    margin: 45px 0;
+    margin-bottom: 20px; /* Espaciado inferior */
 }
 
 .our-shop-title {
     color: #ee626b;
-    font-family: "Poppins", sans-serif;
     font-size: 15px;
     text-transform: uppercase;
     font-weight: 700;
-}
-
-.our-shop-title-container {
-    margin: 41px 0 29px 0px;
+    margin-bottom: 10px; /* Espaciado inferior */
 }
 
 .our-shop-description {
-    font-family: "Poppins", sans-serif;
     font-size: 36px;
     font-weight: 700;
     text-transform: capitalize;
-    margin-top: 20px;
-    line-height: 44px;
-    padding: 0 115px 0 0;
-    margin-bottom: 58px;
-
+    line-height: 1.2; /* Mejora la legibilidad */
+    margin-bottom: 20px; /* Espaciado inferior */
 }
 
-.prices {
-    color: #0071f8;
-}
-
-.lorem {
-    padding: 0 40px 0 0;
+.our-shop-description .prices {
+    color: #0071f8; /* Color para el texto resaltado */
 }
 
 .lorem p {
-    line-height: 28px;
     color: #4a4a4a;
-    font-weight: 600;
     font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6; /* Mejora la legibilidad */
+    margin-bottom: 30px; /* Espaciado inferior */
 }
-
 
 .button-shop a {
     display: inline-block;
     background-color: #ee626b;
-    text-transform: uppercase;
     color: #fff;
     font-size: 14px;
     font-weight: 600;
-    height: 50px;
-    line-height: 50px;
-    padding: 0px 30px;
+    padding: 10px 30px; /* Padding más equilibrado */
     border-radius: 25px;
-    transition: all .3s;
-    font-family: "Poppins", sans-serif;
-    text-decoration: none;
-
+    text-transform: uppercase;
+    transition: background-color 0.3s;
 }
 
+.button-shop a:hover {
+    background-color: #d9534f; /* Efecto hover */
+}
+
+/* Media Queries para Responsive Design */
+@media (max-width: 768px) {
+    .our-shop {
+        padding: 30px 15px; /* Reduce el padding en tablets */
+    }
+
+    .our-shop-description {
+        font-size: 28px; /* Reduce el tamaño de la fuente en tablets */
+    }
+
+    .lorem p {
+        font-size: 14px; /* Reduce el tamaño de la fuente en tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .our-shop {
+        padding: 20px 10px; /* Reduce el padding en móviles */
+    }
+
+    .our-shop-description {
+        font-size: 24px; /* Reduce el tamaño de la fuente en móviles */
+    }
+
+    .lorem p {
+        font-size: 12px; /* Reduce el tamaño de la fuente en móviles */
+    }
+
+    .button-shop a {
+        font-size: 12px; /* Reduce el tamaño de la fuente en móviles */
+        padding: 8px 20px; /* Reduce el padding en móviles */
+    }
+}
+
+.fondo {
+    position: relative;
+    width: 100%;
+    max-width: 1200px; /* Ancho máximo para evitar que se estire demasiado */
+    margin: 0 auto; /* Centra el contenedor */
+    text-align: center; /* Centra el contenido */
+    padding: 20px; /* Espaciado interno */
+}
+
+.fondo img {
+    width: 100%; /* La imagen ocupa el 100% del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 25px; /* Bordes redondeados */
+    display: block; /* Asegura que la imagen sea un bloque */
+    margin: 0 auto; /* Centra la imagen */
+}
+
+/* Media Queries para Responsive Design */
+@media (max-width: 768px) {
+    .fondo {
+        padding: 15px; /* Reduce el padding en tablets */
+    }
+
+    .fondo img {
+        border-radius: 15px; /* Reduce el radio de los bordes en tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .fondo {
+        padding: 10px; /* Reduce el padding en móviles */
+    }
+
+    .fondo img {
+        border-radius: 10px; /* Reduce el radio de los bordes en móviles */
+    }
+}
 
 .newsletter {
     background-color: #f7f7f7;
     border-radius: 25px;
-    padding: 80px 60px;
-    height: auto;
-    position: relative;
-    right: 10%;
-    width: 19%;
-    margin-top: 19%;
+    padding: 40px 20px; /* Padding más equilibrado */
+    text-align: center; /* Centra el contenido */
+    max-width: 600px; /* Ancho máximo para evitar que se estire demasiado */
+    margin: 0 auto; /* Centra el contenedor */
+    font-family: "Poppins", sans-serif; /* Asegura la tipografía */
 }
 
 .newsletter-title {
@@ -568,46 +215,346 @@ form button {
     font-size: 15px;
     text-transform: uppercase;
     font-weight: 700;
-    font-family: "Poppins", sans-serif;
+    margin-bottom: 10px; /* Espaciado inferior */
 }
 
-
-
-.newsletter-description h4 {
+.newsletter-description {
     font-size: 36px;
     font-weight: 700;
     text-transform: capitalize;
-    margin: 56px 0;
-    line-height: 44px;
-    font-family: "Poppins", sans-serif;
-
+    line-height: 1.2; /* Mejora la legibilidad */
+    margin-bottom: 20px; /* Espaciado inferior */
 }
 
-.newsletter-description span{
-    color: #0071f8;
-    font-family: "Poppins", sans-serif;
-
+.newsletter-description span {
+    color: #0071f8; /* Color para el texto resaltado */
 }
 
-footer{
-    height: 200px;
-    margin-top: 160px;
-    background-image: url("https://templatemo.com/templates/templatemo_589_lugx_gaming/assets/images/footer-bg.jpg");
-    background-repeat: no-repeat;
+.newsletter form {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Espacio entre el input y el botón */
+    margin-top: 20px; /* Espaciado superior */
+}
+
+.newsletter input {
+    padding: 10px 20px; /* Padding más equilibrado */
+    border-radius: 25px;
+    border: 1px solid #ccc; /* Borde sutil */
+    font-size: 14px;
+    width: 100%; /* Ocupa todo el ancho disponible */
+    max-width: 300px; /* Ancho máximo para el input */
+}
+
+.newsletter button {
+    padding: 10px 20px; /* Padding más equilibrado */
+    border-radius: 25px;
+    background-color: #ee626b;
+    color: #fff;
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.newsletter button:hover {
+    background-color: #d9534f; /* Efecto hover */
+}
+
+/* Media Queries para Responsive Design */
+@media (max-width: 768px) {
+    .newsletter {
+        padding: 30px 15px; /* Reduce el padding en tablets */
+    }
+
+    .newsletter-description {
+        font-size: 28px; /* Reduce el tamaño de la fuente en tablets */
+    }
+
+    .newsletter input {
+        font-size: 12px; /* Reduce el tamaño de la fuente en tablets */
+    }
+
+    .newsletter button {
+        font-size: 12px; /* Reduce el tamaño de la fuente en tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .newsletter {
+        padding: 20px 10px; /* Reduce el padding en móviles */
+    }
+
+    .newsletter-description {
+        font-size: 24px; /* Reduce el tamaño de la fuente en móviles */
+    }
+
+    .newsletter form {
+        flex-direction: column; /* Apila el input y el botón en móviles */
+        align-items: center;
+    }
+
+    .newsletter input {
+        max-width: 100%; /* Ocupa todo el ancho en móviles */
+    }
+
+    .newsletter button {
+        width: 100%; /* Ocupa todo el ancho en móviles */
+        max-width: 300px; /* Ancho máximo para el botón */
+    }
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 480px) {
+    .li-final {
+        padding: 8px 15px; /* Reduce el padding en móviles */
+        font-size: 12px; /* Reduce el tamaño de la fuente en móviles */
+    }
+}
+
+/* Body Content */
+.body-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: rgb(0, 113, 248);
+    background-image: url("https://templatemo.com/templates/templatemo_589_lugx_gaming/assets/images/banner-bg.jpg");
     background-size: cover;
-    border-top-right-radius: 125px;
-    border-top-left-radius: 125px;
+    background-position: center;
+    border-radius: 0 0 150px 150px;
 }
 
-.footer-container{
+.page-info {
     text-align: center;
-    padding: 19px;
+    max-width: 600px;
+    margin-bottom: 40px;
+}
+
+.page-info h6 {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.page-info h2 {
+    font-size: 36px;
+    color: #fff;
+    margin: 20px 0;
+}
+
+.page-info p {
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.search-input form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.search-input input {
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: none;
+    width: 100%;
+    max-width: 300px;
+}
+
+.search-input button {
+    padding: 10px 20px;
+    border-radius: 25px;
+    background-color: #ee626b;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-input button:hover {
+    background-color: #d9534f;
+}
+
+.game-image {
+    position: relative;
+    max-width: 420px;
+    margin-top: 20px;
+}
+
+.game-image img {
+    border-radius: 20px;
+}
+
+.price, .offer {
+    position: absolute;
+    background-color: #0071f8;
+    color: #fff;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.price {
+    top: 20px;
+    right: 20px;
+}
+
+.offer {
+    bottom: 20px;
+    right: 20px;
+    background-color: #ee626b;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Features Section */
+.features {
+    padding: 50px 20px;
+}
+
+.features-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.features-card {
+    flex: 1 1 calc(25% - 40px);
+    max-width: 300px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 25px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+.features-card img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+}
+
+.features-card h4 {
+    font-size: 18px;
+    color: #333;
+    margin-top: 10px;
+}
+
+/* Trending Games Section */
+.treding, .top, .categories {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.titulo h6 {
+    color: #ee626b;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.titulo h2 {
+    color: #333;
+    font-size: 36px;
+    margin: 20px 0;
+}
+
+.features-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.features-card-games, .features-card-sale {
+    flex: 1 1 calc(25% - 40px);
+    max-width: 300px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 25px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+.features-card-games img, .features-card-sale img {
+    border-radius: 20px;
+    margin-bottom: 15px;
+}
+
+.features-game-name span {
+    color: #7a7a7a;
+    font-size: 16px;
+}
+
+.features-game-name h4 {
+    color: #333;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+
+
+/* Footer */
+footer {
+    background-image: url("https://templatemo.com/templates/templatemo_589_lugx_gaming/assets/images/footer-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 50px 20px;
+    text-align: center;
+    color: #fff;
+    border-radius: 125px 125px 0 0;
+    margin-top: 50px;
 }
 
 .footer-container p {
-    text-align: center;
-    line-height: 90px;
-    color: #fff;
     font-size: 16px;
     font-weight: 400;
+}
+
+/* Media Queries para Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .body-content {
+        border-radius: 0;
+    }
+
+    .features-card, .features-card-games, .features-card-sale {
+        flex: 1 1 calc(50% - 20px);
+    }
+
+    .page-info, .game-image {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .price, .offer {
+        position: static;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .features-card, .features-card-games, .features-card-sale {
+        flex: 1 1 100%;
+    }
+
+    .page-info h2 {
+        font-size: 28px;
+    }
+
+    .titulo h2 {
+        font-size: 28px;
+    }
 }
